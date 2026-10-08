@@ -80,10 +80,23 @@
 
 <section>
         <div class="chart-description">
-            <h2>Section 3: My third chart</h2>
+            <h2>Section 3: A chloropleth map</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 Here's a third chart - this time, a chloropleth map using colours and shades across different regions to illustrate differences in a particular variable. 
                 In this case, the map is showing how literacy rates vary region-to-region in India.
+            </p>
+        </div>
+        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
+
+<section>
+        <div class="chart-description">
+            <h2>Section 4: My own chart (US diesel prices over time)</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                I generated this map myself, with help from Richard's data hub (on the Economics Observatory). We started by copying the code from his graph and pasting it into Vega Lite Editor.
+                Then we took raw data on US diesel prices from FRED, downloaded it as a csv file, reformatted the year (yyyy-mm-dd), renamed columns, and uploaded this to our repository.
+                In Vega Lite Editor, we connected to the raw data in our repository by copying the 'raw data' from our repository (accessed by the two squares in github) and pasted this in.
+                Finally, we updated the fields to correspond with the column headings in our csv file.
             </p>
         </div>
         <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
@@ -109,6 +122,9 @@
 
         let figure_3_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/4/s4_chart4.json";
         vegaEmbed('#Location3', figure_3_spec)
+
+        let figure_4_spec = "https://raw.githubusercontent.com/rachelweatherley/rachelweatherley.github.io/refs/heads/main/diesel%20chart.json";
+        vegaEmbed('#Location4', figure_4_spec)
         
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
