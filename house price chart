@@ -1,0 +1,17 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/rachelweatherley/rachelweatherley.github.io/refs/heads/main/uk_house_prices.csv"},
+
+    "title": {"text": "House price changes since 1970 (UK)"},
+
+    "width":500,
+    "height":300,
+
+    "mark":{"type": "line","color":"rebeccapurple"},
+ 
+    "encoding": {
+      "x": {"field": "date","type": "temporal"},
+      "y": {"field": "value","type": "quantitative"}
+    }
+}
