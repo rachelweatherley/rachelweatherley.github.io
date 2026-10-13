@@ -101,6 +101,17 @@
         </div>
         <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
+
+     
+<section>
+        <div class="chart-description">
+            <h2>Section 4 continued: My own chart (UK house prices since 1970)</h2>
+            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
+                I did this myself.
+            </p>
+        </div>
+        <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
+    </section>
     
     <!-- Do you want to add more sections? -->
         <!-- Try copying pasting the section above -->
@@ -125,6 +136,9 @@
 
         let figure_4_spec = "https://raw.githubusercontent.com/rachelweatherley/rachelweatherley.github.io/refs/heads/main/diesel%20chart.json";
         vegaEmbed('#Location4', figure_4_spec)
+
+        let figure_5_spec = "https://raw.githubusercontent.com/rachelweatherley/rachelweatherley.github.io/refs/heads/main/house%20price%20chart.json";
+        vegaEmbed('#Location5', figure_5_spec)
         
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
