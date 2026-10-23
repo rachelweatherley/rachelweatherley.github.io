@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/rachelweatherley/rachelweatherley.github.io/refs/heads/main/us_diesel_prices.csv"
   },
   "title": {"text": "Price of diesel over time (USA)"},
-  "width": 300,
+  "width": 500,
   "height": 300,
   "mark": {"type": "line", "color": "red"},
   "encoding": {
