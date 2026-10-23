@@ -8,7 +8,7 @@
     "width":500,
     "height":300,
 
-    "mark":{"type": "line","color":"rebeccapurple"},
+    "mark":{"type": "line","color":"red"},
  
     "encoding": {
       "x": {"field": "date","type": "temporal"},
